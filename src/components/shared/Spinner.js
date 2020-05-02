@@ -4,7 +4,7 @@ const Spinner = () => {
   return (
     <>
       <img
-        src={require("../assets/images/spinner.gif")}
+        src={require("../../assets/images/spinner.gif")}
         alt=""
         style={{ width: 200, margin: "auto", display: "block" }}
       />
