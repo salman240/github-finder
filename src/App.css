@@ -2,7 +2,8 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #3562dc;
+  /* --primary-color: #3562dc; */
+  --primary-color: #000;
   --dark-color: #333333;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
@@ -377,7 +378,7 @@ table th {
 }
 
 i {
-  margin-right: 4px;
+  margin-right: 8px;
 }
 
 /* Mobile Styles */
