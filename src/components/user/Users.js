@@ -10,11 +10,18 @@ const Users = () => {
   if (loading) return <Spinner />;
 
   return (
-    <div style={styles.users}>
-      {users.map((user) => (
-        <UserItem key={user.id} user={user} />
-      ))}
-    </div>
+    <>
+      <div style={styles.users}>
+        {users.map((user) => (
+          <UserItem key={user.id} user={user} />
+        ))}
+      </div>
+      {users.length === 0 && (
+        <div>
+          <img src={require("../../assets/images/empty.png")} alt="" />
+        </div>
+      )}
+    </>
   );
 };
 
