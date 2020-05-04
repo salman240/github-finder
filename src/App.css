@@ -381,6 +381,12 @@ i {
   margin-right: 8px;
 }
 
+.users {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
 /* Mobile Styles */
 @media (max-width: 700px) {
   .hide-sm {
@@ -415,5 +421,9 @@ i {
   .navbar ul {
     text-align: center;
     justify-content: center;
+  }
+
+  .users {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

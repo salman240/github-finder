@@ -11,7 +11,7 @@ const Users = () => {
 
   return (
     <>
-      <div style={styles.users}>
+      <div className="users">
         {users.map((user) => (
           <UserItem key={user.id} user={user} />
         ))}
@@ -26,13 +26,5 @@ const Users = () => {
 };
 
 Users.propTypes = {};
-
-const styles = {
-  users: {
-    display: "grid",
-    gridTemplateColumns: "repeat(3, 1fr)",
-    gridGap: "1rem",
-  },
-};
 
 export default Users;
